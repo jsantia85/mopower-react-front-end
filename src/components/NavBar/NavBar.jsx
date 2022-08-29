@@ -26,22 +26,37 @@ const NavBar = ({ user, handleLogout }) => {
             </div>
             <div class="offcanvas-body">
             {user ?
-        <nav>
-          <ul>
-            <li>Welcome, {user.name}</li>
-            <li><Link to="/profiles">Profiles</Link></li>
-            <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
-            <li><Link to="/changePassword">Change Password</Link></li>
-          </ul>
-        </nav>
-      :
-        <nav>
-          <ul>
-            <li><Link to="/login">Log In</Link></li>
-            <li><Link to="/signup">Sign Up</Link></li>
-          </ul>
-        </nav>
-      }
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <NavLink to="/profiles">
+                  Profiles
+                </NavLink>
+              </li>
+              <li class="nav-item">
+                <NavLink to="" onClick={handleLogout}>
+                  LOG OUT
+                </NavLink>
+              </li>
+              <li class="nav-item">
+                <NavLink to="/changePassword">
+                  Change Password
+                </NavLink>
+              </li>
+            </ul>
+            :
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <NavLink to="/login">
+                  Log In
+                </NavLink>
+              </li>
+              <li class="nav-item">
+                <NavLink to="/signup">
+                  Sign Up
+                </NavLink>
+              </li>
+            </ul>
+            }
             </div>
           </div>
         </div>
