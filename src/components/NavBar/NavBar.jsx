@@ -1,9 +1,20 @@
-import { Link } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
+import styles from './NavBar.module.css'
 
 const NavBar = ({ user, handleLogout }) => {
   return (
     <>
-      {user ?
+      {/* Sets up initial color of navbar */}
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        {/* container for home btn and menu toggle btn */}
+        <div class="container-fluid">
+          <NavLink to='/' className={styles.link}>Home</NavLink>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      {/* {user ?
         <nav>
           <ul>
             <li>Welcome, {user.name}</li>
@@ -19,7 +30,7 @@ const NavBar = ({ user, handleLogout }) => {
             <li><Link to="/signup">Sign Up</Link></li>
           </ul>
         </nav>
-      }
+      } */}
     </>
   )
 }
