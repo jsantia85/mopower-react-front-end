@@ -1,4 +1,4 @@
-import { NavLink,Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styles from './NavBar.module.css'
 
 const NavBar = ({ user, handleLogout }) => {
@@ -27,18 +27,18 @@ const NavBar = ({ user, handleLogout }) => {
             <div class="offcanvas-body">
             {user ?
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <NavLink to="/profiles">
+              <li className='link'>
+                <NavLink to="/profiles" className={styles.link}>
                   Profiles
                 </NavLink>
               </li>
               <li class="nav-item">
-                <NavLink to="" onClick={handleLogout}>
-                  LOG OUT
+                <NavLink to="" onClick={handleLogout} className={styles.link}>
+                  Log Out
                 </NavLink>
               </li>
               <li class="nav-item">
-                <NavLink to="/changePassword">
+                <NavLink to="/changePassword" className={styles.link}>
                   Change Password
                 </NavLink>
               </li>
@@ -46,12 +46,12 @@ const NavBar = ({ user, handleLogout }) => {
             :
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <NavLink to="/login">
+                <NavLink to="/login" className={styles.link}>
                   Log In
                 </NavLink>
               </li>
               <li class="nav-item">
-                <NavLink to="/signup">
+                <NavLink to="/signup" className={styles.link}>
                   Sign Up
                 </NavLink>
               </li>
