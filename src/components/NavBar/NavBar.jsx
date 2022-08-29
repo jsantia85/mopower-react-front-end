@@ -6,12 +6,17 @@ const NavBar = ({ user, handleLogout }) => {
     <>
       {/* Sets up initial color of navbar */}
       <nav class="navbar navbar-dark bg-dark fixed-top">
-        {/* container for home btn and menu toggle btn */}
+        {/* container for home btn and navBar toggle */}
         <div class="container-fluid">
           <NavLink to='/' className={styles.link}>Home</NavLink>
+          {/* code for navBar toggle */}
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
+          {/* code allows horizontal tab to open */}
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+
+          </div>
         </div>
       </nav>
       {/* {user ?
