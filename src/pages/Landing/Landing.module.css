@@ -17,3 +17,17 @@ body {
   width: 100%;
   font-family: 'Dancing Script', cursive;
 }
+
+@media only screen and (max-width: 600px) {
+  .title{
+    color: red;
+  font-size: 6rem;
+  left: 0;
+  margin-top: 18rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+  }
+}
