@@ -1,5 +1,5 @@
 body {
-  background-image: url("/public/imgs/chrisHristovUnsplash.jpg");
+  background-image: url("/public/imgs/unsplash2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,6 +24,21 @@ body {
   font-size: 3rem;
   left: 0;
   margin-top: 10rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1rem 1rem 1rem #121212;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .title{
+    color: red;
+  font-size: 5rem;
+  left: 0;
+  margin-top: 14rem;
   position: absolute;
   text-align: center;
   top: 50%;
