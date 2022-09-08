@@ -4,7 +4,8 @@ const Landing = ({ user }) => {
 
   return (
     <>
-      <h1 className={styles.title}>Welcome</h1>
+      <h1 className={styles.title}>Find Your Dream Build</h1>
+      
     </>
   )
 }

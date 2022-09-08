@@ -1,8 +1,19 @@
 body {
   background-image: url("/public/imgs/chrisHristovUnsplash.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .title {
-  color: #121212;
-  font-size: 10rem;
+  color: #FFFFFF;
+  font-size: 6rem;
+  left: 0;
+  margin-top: 18rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
 }
